@@ -1,8 +1,23 @@
 INHERIT: .relcon-docs/base.yml
 site_name: Relaxed Constraints
 site_url: https://relaxed-constraints.github.io/
-site_description: Tools and benchmarks for document database research.
+site_description: Tools and benchmarks for database research.
 repo_url: https://github.com/relaxed-constraints/relaxed-constraints.github.io
 repo_name: relaxed-constraints/relaxed-constraints.github.io
+copyright: 'Copyright &copy; 2026 <a href="https://relcon.ai/">Relaxed Constraints</a>'
 nav:
   - Home: index.md
+theme:
+  features:
+    - content.tabs.link
+    - content.code.copy
+    - navigation.top
+    - search.highlight
+extra_css:
+  - stylesheets/relcon-docs.css
+  - stylesheets/relcon-docs-presentation.css
+  - stylesheets/home.css
+markdown_extensions:
+  pymdownx.emoji:
+    emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
+    emoji_index: !!python/name:zensical.extensions.emoji.twemoji

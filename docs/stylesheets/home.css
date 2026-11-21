@@ -1,0 +1,112 @@
+.md-typeset:has(.project-cards) {
+  margin-inline: auto;
+  max-width: min(52rem, calc(100% - 1.6rem));
+}
+
+.md-typeset:has(.project-cards) h1 {
+  color: var(--md-default-fg-color);
+  font-size: clamp(1.65rem, 3.5vw, 2.35rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  margin-bottom: 0.35em;
+}
+
+.md-typeset .home-intro {
+  color: var(--md-default-fg-color--light);
+  font-size: 1.1em;
+  margin: 0 0 1.65em;
+}
+
+.md-typeset .grid.project-cards {
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.md-typeset .grid.project-cards--featured {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.md-typeset .grid.project-cards > ul > li {
+  border-color: var(--md-default-fg-color--lightest);
+  border-radius: 0.6rem;
+  margin: 0;
+  padding: 0.95rem 1.1rem;
+  position: relative;
+  transition: border-color 180ms ease-out, box-shadow 180ms ease-out, translate 180ms ease-out;
+}
+
+.md-typeset .grid.project-cards--featured > ul > li {
+  background: color-mix(in srgb, var(--md-typeset-a-color) 7%, var(--md-default-bg-color));
+  border-color: color-mix(in srgb, var(--md-typeset-a-color) 30%, var(--md-default-bg-color));
+  padding: 1.2rem 1.3rem;
+}
+
+.md-typeset .grid.project-cards > ul > li:hover {
+  border-color: color-mix(in srgb, var(--md-default-fg-color) 24%, transparent);
+  box-shadow: var(--md-shadow-z2);
+}
+
+.md-typeset .grid.project-cards > ul > li:focus-within {
+  border-color: var(--md-typeset-a-color);
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .md-typeset .grid.project-cards > ul > li:hover {
+    translate: 0 -2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .grid.project-cards > ul > li {
+    transition: none;
+  }
+}
+
+.md-typeset .project-cards li p {
+  margin: 0;
+}
+
+.md-typeset .project-cards li p + p {
+  margin-top: 0.45em;
+  max-width: 65ch;
+}
+
+.md-typeset .project-cards a {
+  color: var(--md-default-fg-color);
+  font-size: 1.15em;
+  text-decoration: none;
+}
+
+.md-typeset .project-cards--featured a {
+  font-size: 1.45em;
+}
+
+.md-typeset .project-cards a::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.md-typeset .project-icon {
+  align-items: center;
+  background: color-mix(in srgb, var(--md-typeset-a-color) 12%, var(--md-default-bg-color));
+  border-radius: 0.32rem;
+  color: var(--md-typeset-a-color);
+  display: inline-flex;
+  height: 1.6rem;
+  justify-content: center;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+  width: 1.6rem;
+}
+
+.md-typeset .project-icon svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+@media (max-width: 40em) {
+  .md-typeset .grid.project-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,32 +1,62 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Relaxed Constraints
 
-Tools and benchmarks for document database research.
+Tools and benchmarks for database research.
+{ .home-intro }
 
-## BONDI
+<div class="grid cards project-cards project-cards--featured" markdown>
 
-[BONDI](https://relaxed-constraints.github.io/bondi/) is a Python toolkit for
-working with document databases. It helps you set up MongoDB and Couchbase,
-load data, define workloads, and run experiments.
+-   :lucide-database:{ .project-icon } **[BONDI](https://relaxed-constraints.github.io/bondi/)**
 
-### Get started
+    A Python toolkit for MongoDB and Couchbase experiments. Deploy databases,
+    load datasets, define workloads, and measure query performance.
 
-- [BONDI Demo Project](https://relaxed-constraints.github.io/bondi-demo-project/)
-  walks through a reproducible MongoDB experiment, from preparing a dataset to
-  comparing index configurations.
-- [BONDI Empty Project](https://relaxed-constraints.github.io/bondi-empty-project/)
-  provides a minimal starter for your own BONDI experiments.
+</div>
 
-### Benchmarks
+## Get started
 
-- [BONDI JSON Bench](https://relaxed-constraints.github.io/bondi-json-bench/)
-  compares analytical queries across MongoDB and Couchbase on a travel dataset.
-- [BONDI Benchmarks](https://relaxed-constraints.github.io/bondi-benchmarks/)
-  provides a reproducible setup for running YCSB workloads against MongoDB and
-  Couchbase.
+<div class="grid cards project-cards" markdown>
+
+-   :lucide-book-open:{ .project-icon } **[BONDI Demo Project](https://relaxed-constraints.github.io/bondi-demo-project/)**
+
+    Follow a reproducible MongoDB experiment, from preparing a dataset to
+    comparing index configurations.
+
+-   :lucide-folder-plus:{ .project-icon } **[BONDI Empty Project](https://relaxed-constraints.github.io/bondi-empty-project/)**
+
+    Start your own BONDI experiments with a minimal project scaffold.
+
+</div>
+
+## Benchmarks
+
+<div class="grid cards project-cards" markdown>
+
+-   :lucide-chart-no-axes-column:{ .project-icon } **[BONDI JSON Bench](https://relaxed-constraints.github.io/bondi-json-bench/)**
+
+    Compare analytical queries across MongoDB and Couchbase on a travel dataset.
+
+-   :lucide-gauge:{ .project-icon } **[BONDI Benchmarks](https://relaxed-constraints.github.io/bondi-benchmarks/)**
+
+    Run reproducible YCSB workloads against MongoDB and Couchbase.
+
+</div>
 
 ## Related tools
 
-- [Yanex](https://relaxed-constraints.github.io/yanex/) tracks experiment
-  configurations, metrics, and artifacts.
-- [relcon-docs](https://relaxed-constraints.github.io/relcon-docs/) provides
-  the shared Zensical configuration and publishing workflow used by this site.
+<div class="grid cards project-cards" markdown>
+
+-   :lucide-flask-conical:{ .project-icon } **[Yanex](https://relaxed-constraints.github.io/yanex/)**
+
+    Track experiment configurations, metrics, and artifacts.
+
+-   :lucide-files:{ .project-icon } **[relcon-docs](https://relaxed-constraints.github.io/relcon-docs/)**
+
+    Share Zensical configuration and the publishing workflow used by this site.
+
+</div>

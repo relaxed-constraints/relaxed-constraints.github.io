@@ -1,0 +1,8 @@
+INHERIT: .relcon-docs/base.yml
+site_name: Relaxed Constraints
+site_url: https://relaxed-constraints.github.io/
+site_description: Tools and benchmarks for document database research.
+repo_url: https://github.com/relaxed-constraints/relaxed-constraints.github.io
+repo_name: relaxed-constraints/relaxed-constraints.github.io
+nav:
+  - Home: index.md

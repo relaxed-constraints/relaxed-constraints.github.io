@@ -55,6 +55,11 @@ Tools and benchmarks for database research.
 
     Track experiment configurations, metrics, and artifacts.
 
+-   :lucide-refresh-cw:{ .project-icon } **[Strange Loop](https://relaxed-constraints.github.io/strange-loop/)**
+
+    Build Python workflows that track each result back to its inputs and reuse
+    completed work when a result needs revision.
+
 -   :lucide-files:{ .project-icon } **[relcon-docs](https://relaxed-constraints.github.io/relcon-docs/)**
 
     Share Zensical configuration and the publishing workflow used by this site.
